@@ -1,4 +1,4 @@
-import {Mentee, Mentor, Admin} from "../../src/models/u-index.js";
+import {Mentee, Mentor, Admin} from "../models/u-index.js";
 
 
 export const isUserEmailUnique = async (email:string):Promise<boolean> => {
