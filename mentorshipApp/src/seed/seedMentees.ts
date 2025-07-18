@@ -5,36 +5,101 @@ import { isUserEmailUnique } from "../validations/isUserEmailUnique.js";
 
 const menteesData = [
   {
-    firstName: "Ebuka",
-    lastName: "Johnson",
+    firstName: "Makinde",
+    lastName: "Adesuyi",
     shortBio: "Aspiring web developer passionate about front-end technologies.",
-    email: "ebuka@example.com",
+    email: "udohchi@gmail.com",
     goals: "Learn React and get an internship.",
     skills: ["HTML", "CSS"],
-    password: "password123", 
+    password: "Adesuy45>", 
   },
   {
-    firstName: "Bob",
-    lastName: "Smith",
+    firstName: "Akinrodoye",
+    lastName: "Ogundare",
     shortBio: "Interested in data science and machine learning.",
-    email: "bob.smith@example.com",
+    email: "ajayi432@gmail.com",
     goals: "Build a machine learning portfolio.",
     skills: ["Python", "Pandas", "Matplotlib"],
-    password: "securePass456",
+    password: "doye5000_G",
   },
   {
-    firstName: "Chloe",
-    lastName: "Kim",
+    firstName: "Sobowale",
+    lastName: "Oni",
     shortBio: "Curious about cybersecurity and ethical hacking.",
-    email: "chloe.kim@example.com",
+    email: "zangaoni@gmail.com",
     goals: "Learn about network security tools.",
     skills: ["Networking", "Linux"],
-    password: "cyberSecure!78",
+    password: "Waleszy390-H",
+  },
+  {
+    firstName: "Tijani",
+    lastName: "Adefunke",
+    shortBio: "Interested in data science and machine learning.",
+    email: "funmilola_oseni23@gmail.com",
+    goals: "Build a machine learning portfolio.",
+    skills: ["Python", "Pandas", "Matplotlib"],
+    password: "dare50000!K",
+  },
+  {
+    firstName: "Oseni",
+    lastName: "Funmilola",
+    shortBio: "Curious about cybersecurity and ethical hacking.",
+    email: "omoodemagbe@gmail.com",
+    goals: "Learn about network security tools.",
+    skills: ["Networking", "Linux"],
+    password: "oseni!9078",
+  },
+  { 
+    firstName: "Komolafe",
+    lastName: "Idris",
+    shortBio: "Interested in data science and machine learning.",
+    email: "funmilola_oseni23@gmail.com",
+    goals: "Build a machine learning portfolio.",
+    skills: ["Python", "Pandas", "Matplotlib"],
+    password: "laffy&79A",
+  },
+  {
+    firstName: "Oni",
+    lastName: "Banzaga",
+    shortBio: "Interested in data science and machine learning.",
+    email: "funmilola_oseni23@gmail.com",
+    goals: "Build a machine learning portfolio.",
+    skills: ["Python", "Pandas", "Matplotlib"],
+    password: "banzaga-D897",
+  },
+  {
+    firstName: "Amusan",
+    lastName: "Samuel",
+    shortBio: "Interested in data science and machine learning.",
+    email: "ajayi432@gmail.com",
+    goals: "Build a machine learning portfolio.",
+    skills: ["Python", "Pandas", "Matplotlib"],
+    password: "fidel_5456",
+  },
+  { 
+    firstName: "Adeyemo",
+    lastName: "Tajudeen",
+    shortBio: "Interested in data science and machine learning.",
+    email: "yemodeen234@gmail.com",
+    goals: "Build a machine learning portfolio.",
+    skills: ["Python", "Pandas", "Matplotlib"],
+    password: "yemodeen43.",
+  },
+  {
+    firstName: "Fidelis",
+    lastName: "Umoh",
+    shortBio: "Interested in data science and machine learning.",
+    email: "funmilola_oseni23@gmail.com",
+    goals: "Build a machine learning portfolio.",
+    skills: ["Python", "Pandas", "Matplotlib"],
+    password: "fidel_5456",
   },
 ];
 
 export async function seedMentees(): Promise<void> {
   try {
+    
+
     
   for (const mentee of menteesData) {
     const isEmailUnique = await isUserEmailUnique(mentee.email);
